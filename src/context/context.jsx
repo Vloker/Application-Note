@@ -1,19 +1,17 @@
 import React, { createContext, useState, useContext } from 'react';
+import PropTypes from 'prop-types';
 
 export const ThemeDarkContext = createContext();
 
 export const ThemeDarkProvider = ({ children }) => {
     const [theme, setTheme] = useState(() => {
-        // Cek local storage apakah tema sudah disimpan sebelumnya
         const savedTheme = localStorage.getItem('theme');
-        // Jika tidak ada tema yang disimpan, gunakan tema default (misalnya, tema terang)
         return savedTheme ? JSON.parse(savedTheme) : false;
     });
 
     const toggleTheme = () => {
         setTheme(prevTheme => {
             const newTheme = !prevTheme;
-            // Simpan tema baru ke local storage
             localStorage.setItem('theme', JSON.stringify(newTheme));
             return newTheme;
         });
@@ -24,6 +22,10 @@ export const ThemeDarkProvider = ({ children }) => {
             {children}
         </ThemeDarkContext.Provider>
     );
+};
+
+ThemeDarkProvider.propTypes = {
+    children: PropTypes.node.isRequired
 };
 
 export const useTheme = () => {

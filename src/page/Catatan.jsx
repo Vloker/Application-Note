@@ -3,7 +3,7 @@ import Header from '../component/header/Header';
 import Card from '../component/card/Card';
 import Pencarian from '../component/inputan/Pencarian';
 import { showFormattedDate } from '../utils';
-import { getActiveNotes, addNote, archiveNote, deleteNote, getUserLogged } from '../utils/network'; // Import fungsi-fungsi yang diperlukan
+import { getActiveNotes, addNote, archiveNote, deleteNote, getUserLogged } from '../utils/network';
 import { useTheme } from '../context/context';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
@@ -29,14 +29,12 @@ function Catatan() {
             const { error, data } = await getUserLogged();
             if (!error) {
                 setIsAuthenticated(true);
+            } else {
+                navigate('/');
             }
         };
         checkAuthentication();
-    }, []);
-
-    if (!isAuthenticated) {
-        navigate('/HalamanCatatan');
-    }
+    }, [navigate]);
 
     const formik = useFormik({
         initialValues: {

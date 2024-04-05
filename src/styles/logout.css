@@ -4,9 +4,14 @@
     font-size: medium;
     color: white;
 }
+
 .light-theme #logout{
     background-color: none;
     border: none;
     font-size: medium;
     color: black;
+}
+
+#logout:hover{
+    cursor: pointer;
 }
