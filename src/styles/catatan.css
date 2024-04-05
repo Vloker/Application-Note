@@ -1,0 +1,108 @@
+#Catatan{
+  padding: 4px;
+  height: 100%;
+  min-height: 100dvh;
+}
+
+.dark-theme #Catatan{
+  background-color: #121212;
+  color: white;
+}
+.light-theme #Catatan{
+  background-color: white;
+  color: black;
+}
+
+/* Form */
+  #formCatatan{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+  }
+
+ .dark-theme #formCatatan p{
+    color: #FFFFFF;
+  }
+ .light-theme #formCatatan p{
+    color: #000;
+  }
+
+/*inputan */
+  .dark-theme  #inputan{
+    color: #FFFFFF;
+    padding: 4px;
+    max-width: 50%;
+    border: 1px solid #DDDDDD;
+  }
+  .light-theme  #inputan{
+    color: #121212;
+    padding: 4px;
+    max-width: 50%;
+    border: 1px solid #000;
+  }
+
+  .error{
+    color: red;
+    font-size: small;
+  }
+
+/* textarea */
+  .dark-theme #textarea{
+    padding: 4px;
+    color: #FFFFFF;
+    max-width: 60%;
+    resize: none;
+    background-color: #121212;
+    border: 1px solid #DDDDDD;
+  }
+  .light-theme #textarea{
+    padding: 4px;
+    color: #000;
+    background-color: #FFFFFF;
+    border: 1px solid #000;
+    max-width: 60%;
+    resize: none;
+  }
+
+  /* button */
+  .dark-theme #buttonForm{
+    padding: 4px;
+    border: 1px solid #DDDDDD;
+    color: #DDDDDD;
+    max-width: 30%;
+  }
+  .light-theme #buttonForm{
+    padding: 4px;
+    border: 1px solid #000;
+    color: #000;
+    max-width: 30%;
+  }
+
+
+/* Catatan Aktif */
+  #catatanaktif{
+    display: flex;
+    margin: 20px;
+    flex-direction: column;
+    gap: 20px;
+    width: 80%;
+  }
+
+ .dark-theme #card-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start;
+    gap: 10px;
+    height: 100%;
+}
+
+  .light-theme #card-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start;
+    gap: 10px;
+    height: 100%;
+  }

@@ -1,0 +1,21 @@
+#formRegis{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: auto;
+}
+
+.inputanRegis{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.dark-theme .buttonsAction{
+    background-color: white;
+    color: black;
+}
+.light-theme .buttonsAction{
+    background-color: #121212;
+    color: white;
+}

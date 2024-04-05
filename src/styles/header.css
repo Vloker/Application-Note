@@ -1,0 +1,22 @@
+.header {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.link{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.dark-theme .header {
+  color: white;
+}
+
+.light-theme .header {
+  color: black;
+}

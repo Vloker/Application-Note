@@ -1,0 +1,23 @@
+#pencarian {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+}
+
+.dark-theme #inputanPencarian{
+    background-color: #121212;
+    border: 1px solid white;
+    color: #FFFFFF;
+    padding: 8px;
+    border-radius: 2px;
+    width: 50%;
+}
+.light-theme #inputanPencarian{
+    background-color: #FFFFFF;
+    border: 1px solid black;
+    color: black;
+    padding: 8px;
+    border-radius: 2px;
+    width: 50%;
+}

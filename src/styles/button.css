@@ -1,0 +1,24 @@
+#buttonsAction{
+    border-radius: 4px;
+    font-size: medium;
+    padding: 10px;
+    border: none;
+}
+#buttonsAction:hover{
+    cursor: pointer;
+}
+
+.dark-theme #buttonsAction{
+    background-color: white;
+    color: black;
+}
+.light-theme #buttonsAction{
+    background-color: #121212;
+    color: white;
+}
+.dark-theme #buttonsAction:hover{
+    background-color: wheat;
+}
+.light-theme #buttonsAction:hover{
+    background-color: #121222;
+}

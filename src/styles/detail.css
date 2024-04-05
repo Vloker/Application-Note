@@ -1,0 +1,31 @@
+#detail{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.article{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.dark-theme #detail p{
+    color: #fff;
+}
+.light-theme #detail p{
+    color: #000;
+}
+
+.dark-theme #title h2{
+    color: #fff;
+}
+.dark-theme #title p{
+    color: #fff;
+}
+
+.light-theme #title h2{
+    color: #000;
+}
+.light-theme #title p{
+    color: #000;
+}

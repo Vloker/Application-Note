@@ -1,0 +1,56 @@
+:root {
+    --primary: #BB86FC;
+    --primary-variant: #3700B3;
+    --secondary: #03DAC6;
+    --background: #121212;
+    --surface: #121212;
+    --error: #CF6679;
+    --warning: #F39C12;
+    --on-background: #FFFFFF;
+    --on-background-grey: #c7c7c7;
+    --on-surface: #FFFFFF;
+  }
+  
+  [data-theme="light"] {
+    --background: #DDDDDD;
+    --suface: #FFFFFF;
+    --on-background: #333333;
+    --on-background-grey: #6d6d6d;
+    --on-surface: #333333;
+  }
+  
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+  #arsip{
+    padding: 4px;
+    height: 100%;
+    min-height: 100dvh;
+  }
+
+  .arsipan{
+      display: flex;
+      margin: 20px;
+      flex-direction: column;
+      gap: 20px;
+      width: 100vh;
+    }
+      
+  .card-container{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: start;
+      gap: 10px;
+  }
+
+ .dark-theme #arsip p{
+     color: #FFFFFF;
+  }
+ .light-theme #arsip p{
+     color: #000;
+  }
